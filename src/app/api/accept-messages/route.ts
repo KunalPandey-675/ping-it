@@ -89,7 +89,7 @@ export async function GET(request: Request) {
         console.log('failed to update user status to accept messages')
         return Response.json({
             success: false,
-            message: "failed to update user status to accept messages"
+            message: "error in getting message status"
         }, {
             status: 500
         })
