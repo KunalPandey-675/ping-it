@@ -16,7 +16,7 @@ export async function GET(request: Request) {
         }
 
         const result = UsernameQuerySchema.safeParse(queryParam)
-
+        console.log(result)
         if (!result.success) {
             const usernameErrors = result.error.format().username?._errors || []
             return Response.json({
@@ -40,7 +40,7 @@ export async function GET(request: Request) {
             success: true,
             message: "Username is unique"
         }, {
-            status: 400 
+            status: 200 
         })
 
 
