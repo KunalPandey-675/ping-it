@@ -18,7 +18,7 @@ export async function POST(request: Request) {
             })
         }
         // user accepting msgs?
-        if (!user.isAcceptingMsg) {
+        if (!user.isAcceptingMessages) {
             return Response.json({
                 success: false,
                 message: 'User not accepting msgs'

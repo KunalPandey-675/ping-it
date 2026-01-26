@@ -54,7 +54,7 @@ export const authOptions: NextAuthOptions = {
             if (user) {
                 token._id = user._id?.toString()
                 token.isVerified = user.isVerified
-                token.isAcceptingMsg = user.isAcceptingMsg
+                token.isAcceptingMessages = user.isAcceptingMessages
                 token.username = user.username
             }
             return token
@@ -63,7 +63,7 @@ export const authOptions: NextAuthOptions = {
             if (token) {
                 session.user._id = token._id
                 session.user.isVerified = token.isVerified
-                session.user.isAcceptingMsg = token.isAcceptingMsg
+                session.user.isAcceptingMessages = token.isAcceptingMessages
                 session.user.username = token.username
             }
             return session
