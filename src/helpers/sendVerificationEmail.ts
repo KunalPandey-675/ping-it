@@ -10,7 +10,7 @@ export async function sendVerificationEmail(
     try {
 
         await resend.emails.send({
-            from: 'onboarding@resend.dev',
+            from: "PingIt <otp@kunalpandey.tech>",
             to: email,
             subject: 'Ping-It Verification Code',
             react: VerificationEmail({
