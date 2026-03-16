@@ -218,7 +218,7 @@ const Dashboard = () => {
                     {messages.length > 0 ? (
                         messages.map((message) => (
                             <MessageCard
-                                key={message._id as string}
+                                key={message._id.toString()}
                                 message={message}
                                 onMessageDelete={handleDeleteMessage}
                             />
