@@ -1,0 +1,27 @@
+[
+  {
+    "title": "Message from Alice",
+    "content": "Hi! Just wanted to check in and say hello.",
+    "received": "10 minutes ago"
+  },
+  {
+    "title": "Message from Bob",
+    "content": "Your project update was impressive!",
+    "received": "2 hours ago"
+  },
+  {
+    "title": "Message from Carol",
+    "content": "Can you recommend a good movie?",
+    "received": "1 day ago"
+  },
+  {
+    "title": "Message from Dave",
+    "content": "Don’t forget about our meeting tomorrow.",
+    "received": "3 hours ago"
+  },
+  {
+    "title": "Message from Eve",
+    "content": "Congratulations on your recent achievement!",
+    "received": "5 minutes ago"
+  }
+]
